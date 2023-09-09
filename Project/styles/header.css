@@ -1,0 +1,193 @@
+body{
+  height: 1000px;
+  padding-top: 70px;
+}
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(235, 234, 234);
+  z-index: 1;
+}
+
+.left-section{
+  /* width: 150px; */
+  display: flex;
+  align-items: center;
+
+  .ham-icon{
+    height: 24px;
+    align-items: center;
+    margin-left: 14px;
+    margin-right: 12px;
+  }
+  .yt-icon{
+    height: 24px;
+    margin-left: 5px;
+  }
+  
+}
+.middle-section{
+
+  margin-left: 70px ;
+  margin-right: 35px;
+  flex: 1;
+  max-width: 500px; 
+  display: flex;
+  align-items: center;
+  
+}
+.search-bar{
+  height: 36px;
+  flex: 1;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(215, 214, 214);
+  width: 0;
+}
+.search-bar::placeholder{
+  font-family: Arial;
+  font-size: 16px;
+}
+.search-btn{
+  height: 36px;
+  width: 66px;
+  background-color: rgb(251, 248, 248);
+  margin-right: 12px;
+  border: 1px solid rgb(215, 214, 214);
+  margin-left: -1px;
+  transition: opacity 0.18s;
+  position: relative;
+}
+/* /* .search-btn,  */
+.mic-btn, .apps-btn, 
+.upload-btn, noti-btn
+{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mic-btn .tooltip,
+.apps-btn .tooltip,
+.upload-btn .tooltip,
+.noti-btn .tooltip
+{
+  font-family: arial;
+  position: absolute;
+  white-space:nowrap ;
+  bottom: -50px;
+}
+
+.search-icon{
+  height: 30px;
+  margin-bottom: 4px;
+}
+
+.tooltip{
+  
+  background-color: rgb(147, 144, 144);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 9px;
+  padding-right: 9px;
+  font-size: 14px; 
+  /* changing */
+  color: white;
+  font-family: arial;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -30;
+  opacity: 0;
+  pointer-events: none;
+}
+
+ .search-btn:hover .tooltip,
+  .mic-btn:hover .tooltip,
+  .apps-btn:hover .tooltip,
+  .upload-btn:hover .tooltip,
+  .noti-btn:hover .tooltip
+ {
+  opacity: 1;
+ }
+
+.mic-btn{
+  height: 36px;
+  width: 36px;
+  background-color: rgb(251, 248, 248);
+  border-radius:20px;
+  border: none;
+}
+.mic-icon{
+  height: 24px;
+}
+
+.right-section{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between ;
+  flex-shrink: 0;
+}
+
+.upload-btn{
+  height: 36px;
+  width: 36px;
+  background-color: white;
+  border: none;
+}
+.upload-icon{
+  height: 24px;
+}
+
+.apps-btn{
+  height: 36px;
+  width: 36px;
+  background-color: white;
+  border: none;
+}
+.apps-icon{
+  height: 24px;
+}
+.noti-btn{
+  height: 36px;
+  width: 36px;
+  background-color: white;
+  border: none;
+}
+.noti-icon{
+  height: 24px;
+}
+.noti-combined{
+  position: relative;
+}
+.noti-num{
+  font-family: arial;;
+  position: absolute;
+  top: 0;
+  right:0;
+  margin-top: 3px;
+  color: white;
+  font-size: 11px;
+  background-color: rgb(182, 20, 20);
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.myself{
+  height: 32px;
+  width: 32px;
+  border-radius: 20px;
+  margin-right: 20px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="about.css">
+
+
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+    darkMode: 'class',
+      theme:{
+        screens: {
+          sm: '480px',
+          md: '768px',
+          lg: '976px',
+          xl: '1440px'
+        },
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+           alata: ['Alata'],
+          },
+        },
+      },
+    }
+  </script>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section id="About">
+    <div class="py-24">
+
+   
+    <div class="text-center font-sans sm:space-y-4 space-y-12 p-12 sm:p-4">
+      <h1 class="text-2xl font-bold text-center text-black uppercase">
+        About Me</h1>
+      <p class="md:text-xl sm:text-sm indent-20 leading-relaxed text-black">
+            I'm a dedicated professional with a background in Information Technology. I pursued my passion 
+            for Front-End Development during my academic journey, starting with my schooling at Saraswati
+            Shiksha Niketan in 2013.My higher secondary education at Dakshin Kamrup College further fueled my interest. In 2020, I earned a Bachelor's degree in 
+            Information Technology from Gauhati University, followed by a Master's in the same field with a specific
+            focus on Front-End Development.Throughout my academic career, I've honed my skills in HTML, CSS, JavaScript, 
+            and responsive web design. My portfolio reflects my commitment to creating engaging web interfaces. 
+            I'm excited to leverage my expertise as a Front-End Developer and connect with fellow 
+            professionals who share my passion for user-centricweb experiences.</p>
+          <div>
+            <a  class="bg-blue-400 py-2 px-4 rounded shadow text-lg" 
+            href="http://127.0.0.1:5501/portfolio.html#header" target="_blank">Home</a>
+          </div>
+            
+          </div>
+
+      <div class="tools text-white">
+        <div>
+          <p class="font-bold uppercase text-black sm:text-sm md:text-xl sm:p-4 p-12 text-center">
+            tools used for this website are
+          </p>
+        </div>
+        <div class="images flex flex-cols md:flex-row sm:space-x-8 md:space-x-28 sm:ml-8 md:ml-72 sm:py-8 py-16">
+          <img class="sm:w-20 sm:h-16 md:w-36 md:h-28 active:rotate-12 transform hover:translate-y-4 delay-100 duration-150" src="images/logo/html.png " alt="html">
+          <img class="sm:w-16 sm:h-16 md:w-32 md:h-28 active:rotate-45 transform hover:translate-x-4 delay-100 duration-150" src="images/logo/css.png" alt="css">
+          <img class="sm:w-24 sm:h-12 md:w-36 md:h-28 active:rotate-90 transform hover:-translate-y-4 delay-100 duration-150" src="images/logo/tailwind.png" alt="tailwind">
+          <img class="sm:w-20 sm:h-16 md:w-36 md:h-28 transform active:rotate-180 hover:-translate-y-4 delay-100 duration-150
+          " src="images/logo/js.png" alt="JavaScript">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
+

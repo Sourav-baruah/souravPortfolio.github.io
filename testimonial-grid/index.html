@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- tailwind cdn -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <!-- font-family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Semi+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script>
+  tailwind.config = {
+    theme:{
+      screens: {
+        sm: '480px',
+        md: '768px',
+        lg: '976px',
+        xl: '1440px'
+      },
+      extend: {
+        fontFamily: {
+          sans: ['Barlow Semi Condensed', 'sans-serif'],
+        },
+      },
+    },
+  }
+</script>
+
+<script>
+  module.exports = {
+  // ...
+  plugins: [
+    // ...
+    require('@tailwindcss/line-clamp'),
+  ],
+}
+</script>
+
+
+</head>
+<body class="bg-gray-200">
+  <!-- global container -->
+  <div class="max-w-7xl mx-auto p-6 m-4 ">
+<!-- grid container -->
+    <div class=" grid grid-cols-1 md:grid-cols-4 gap-4 text-white">
+
+      <!-- box 1 -->
+       <div class="relative p-12 bg-purple-800 rounded-2xl
+        ring-2 ring-purple-800 md:col-span-2">
+        <!-- quote -->
+        <div class="absolute top-4 right-12">
+          <img src="images/quote.png" alt="" class="w-44 md:scale-150">
+        </div>
+       
+        <div class="flex space-x-4 z-10">
+           <!-- propic -->
+           <img src="images/pro-pic-one.jpg" alt="" 
+        class="w-24 rounded-full">
+
+        <!-- text -->
+        <div class="text-lg">
+          <h3>Francesca Fortenbaugh</h3>
+          <p class="opacity-90">Johns Hopkins University</p>
+        </div>
+        </div>
+
+
+        <!-- lower-text -->
+
+        <div class="space-y-8 mt-8 tracking-wide">
+          <h1 class="font-bold text-2xl">Company that i can truly trust</h1>
+          <p class="opacity-90 font-semi-bold text-xl line-clamp-6">"I cannot praise this company
+            enough for their exceptional service. From the moment I reached out to them, 
+            they demonstrated a level of professionalism and dedication that exceeded my 
+            expectations. Their team went above and beyond to understand my needs and 
+            delivered a solution that surpassed all my requirements. Not only did they 
+            provide a high-quality product, but they also ensured that I felt supported 
+            throughout the entire process. The customer service I received was outstanding, with prompt responses to my inquiries and a genuine willingness to assist me in any way possible. I highly recommend this company to anyone 
+            in need of their services. They truly set the standard for excellence!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ducimus explicabo praesentium aliquam harum! Dignissimos quidem accusantium quos eveniet totam, ullam quod,
+             doloribus alias earum, quas et aperiam consequuntur tempora!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis beatae voluptatum error iure impedit. Nulla, officiis, itaque quibusdam dignissimos beatae assumenda veritatis
+             amet ipsa cupiditate quidem ab illo consectetur inventore.
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat id voluptas hic aspernatur qui repellendus, delectus itaque doloremque, voluptatum eaque, vitae expedita corrupti. Id architecto atque libero, animi corrupti at illum quod doloremque debitis facilis. Possimus totam nam consequatur porro beatae et cupiditate, doloremque, accusamus soluta incidunt eligendi corporis consectetur velit cumque unde, molestias tempore amet vitae ab impedit ad eos at iusto id. Praesentium aperiam alias at tempore quae nemo adipisci sapiente, officia in atque mollitia voluptas, enim nulla! Deleniti harum corporis exercitationem aperiam provident, cumque possimus obcaecati rerum ullam magni et. 
+             Qui repellat at quos sequi quibusdam doloribus!
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nulla non quod numquam illo dignissimos sint placeat officiis. Eligendi esse iure repellendus quaerat quibusdam perferendis sapiente nihil totam distinctio quam aspernatur odio debitis ducimus neque doloremque commodi nobis id cum nam corporis nulla, ea harum consequatur dolor. Corrupti at eveniet tempora voluptatibus omnis quia aperiam obcaecati veniam, iusto nulla architecto labore molestiae quod minima repellat pariatur hic quam maxime ullam voluptatum quidem tempore nobis. Quidem necessitatibus quisquam similique eum nostrum unde excepturi repellendus nihil quaerat? Perspiciatis, corporis aspernatur laboriosam dolores doloremque maiores dicta nulla dolore ad aliquam distinctio facilis, rerum veniam perferendis exercitationem voluptatum earum fugiat odio. Assumenda architecto dolorem, accusantium impedit fugit recusandae deleniti molestiae deserunt corporis minima provident magni distinctio! Asperiores sit voluptatem, porro, explicabo nisi temporibus culpa veritatis neque excepturi sed architecto corrupti! Temporibus, doloribus repellat in quod unde nihil iste quae delectus. Doloribus porro et quidem atque, explicabo non expedita! Nam iusto architecto, sapiente deserunt voluptas expedita? Aspernatur, et possimus ab similique eum dicta beatae sapiente? Autem rerum cum enim tempora? Inventore, adipisci autem repellat error libero voluptate amet illum debitis reprehenderit eveniet magni id quidem provident explicabo
+              ab molestias dolore fuga neque dolor commodi aperiam!
+             "</p>
+        </div> 
+      </div>
+
+      <!-- box-2 -->
+
+      <div class="p-12 bg-gray-600 rounded-2xl ring-2 ring-gray-500">
+       
+        <div class="flex space-x-4 z-10">
+           <!-- propic -->
+           <img src="images/pro-pic-two.jpg" alt="" 
+        class="w-16 rounded-full">
+
+        <!-- text -->
+        <div class="text-lg">
+          <h3>Emily levigne</h3>
+          <p class="opacity-90">Oxford University</p>
+        </div>
+        </div>
+
+        <!-- lower-text -->
+
+        <div class="space-y-8 mt-8 tracking-wide">
+          <h1 class="font-bold text-2xl">I can't express how grateful I am for the outstanding support I received. The team was attentive,
+             patient, and helped me every step of the way. A top-notch service!</h1>
+          <p class="opacity-90 font-semi-bold text-xl line-clamp-1">"I've been a loyal customer of this 
+            company for several years now, and I can confidently say that they are the best
+             in the business. Their commitment to excellence is evident in every interaction 
+             and transaction. "</p>
+        </div> 
+      </div>
+
+      <!-- box-3 -->
+
+      <div class="relative p-12 bg-green-900 rounded-2xl md:row-span-2">
+       
+        <div class="flex space-x-4 z-10">
+           <!-- propic -->
+           <img src="images/pro-pic-three.jpg" alt="" 
+        class="w-16 rounded-full">
+
+        <!-- text -->
+        <div class="text-lg">
+          <h3>John D.</h3>
+          <p class="opacity-90">Texas University</p>
+        </div>
+        </div>
+
+        <!-- lower-text -->
+
+        <div class="space-y-8 mt-8 tracking-wide">
+          <h1 class="font-bold text-2xl">I had a wonderful experience working with this company. 
+            The staff was professional, knowledgeable, and provided prompt assistance. </h1>
+          <p class="opacity-90 font-semi-bold text-xl">"They genuinely care about their 
+            customers and go to great lengths to ensure their satisfaction. I have always 
+            felt valued and appreciated as a customer, receiving personalized attention and
+             tailored solutions to meet my unique needs. This level of service is rare to 
+             find these days, and I am grateful to have found
+             a company that truly understands the meaning of exceptional customer service."</p>
+        </div> 
+      </div>
+
+      <!-- box-4 -->
+
+      <div class="relative p-12 bg-cyan-900 rounded-2xl">
+       
+        <div class="flex space-x-4 z-10">
+           <!-- propic -->
+           <img src="images/pro-pic-four.webp" alt="" 
+        class="w-16 rounded-full">
+
+        <!-- text -->
+        <div class="text-lg">
+          <h3>Sam Holland</h3>
+          <p class="opacity-90">Stanford University</p>
+        </div>
+        </div>
+
+        <!-- lower-text -->
+
+        <div class="space-y-8 mt-8 tracking-wide">
+          <h1 class="font-bold text-2xl">I recently had the pleasure of working with 
+            this company, and I can confidently say that it was a remarkable experience.</h1>
+          <p class="opacity-90 font-semi-bold text-xl line-clamp-3">"From the initial consultation to 
+            the final delivery, every step of the process was handled with utmost
+             professionalism and attention to detail. The team assigned to my project was 
+             highly skilled and dedicated, consistently exceeding my expectations. They 
+             took the time to understand my vision and translate it into a flawless end 
+             result. The quality of their workmanship and the level of craftsmanship were 
+             truly exceptional. Throughout the project, they maintained open lines of
+             communication, keeping me informed and involved in the decision-making process. "</p>
+        </div> 
+      </div>
+
+      <!-- box-5 -->
+
+      <div class="relative p-12 bg-pink-900 rounded-2xl md:col-span-2">
+       
+        <div class="flex space-x-4 z-10">
+           <!-- propic -->
+           <img src="images/pro-pic-five.jpg" alt="" 
+        class="w-16 rounded-full">
+
+        <!-- text -->
+        <div class="text-lg">
+          <h3>Jason Mraz</h3>
+          <p class="opacity-90">University of Sussex</p>
+        </div>
+        </div>
+
+        <!-- lower-text -->
+
+        <div class="space-y-8 mt-8 tracking-wide">
+          <h1 class="font-bold text-2xl">I couldn't be happier with the service I received! The
+             team went above and beyond to meet my expectations. Highly recommended!</h1>
+          <p class="opacity-90 font-semi-bold text-xl">"Throughout the process, they 
+            exhibited the highest level of professionalism, promptly addressing any 
+            concerns and ensuring that I was completely satisfied. Their attention to 
+            detail and commitment to delivering excellence are truly commendable. I am
+             beyond thrilled with the final result 
+            and cannot recommend this company enough. They are true masters of their craft!". "</p>
+        </div> 
+      </div>
+
+
+
+    </div>
+  </div>
+
+</body>
+</html>

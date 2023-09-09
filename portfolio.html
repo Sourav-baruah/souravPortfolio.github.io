@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="portfolio.css">
+
+  <!-- font -->
+  <!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <script>
+    tailwind.config = {
+    darkMode: 'class',
+      theme:{
+        screens: {
+          sm: '480px',
+          md: '768px',
+          lg: '976px',
+          xl: '1440px'
+        },
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+           alata: ['Alata'],
+          },
+        },
+      },
+    }
+  </script>
+
+</head>
+<body>
+  <!-- nav bar -->
+  <nav id="header ">
+  <!-- global container -->
+   <div class="container max-w-full mx-auto px-6 py-12">
+    <!-- menu logo container -->
+    <div class="flex justify-between text-xl">
+      <!-- 1st section -->
+      <!-- desktop version -->
+      
+        <div class="sm:hidden md:flex space-x-4 ">
+          <div>
+            <img class="h-12 " 
+          src="images/logo/145816849_padded_logo.png" alt="logo">
+          </div>
+          <div>
+            <h1>Portfolio</h1>
+          </div>
+      </div>
+      
+      
+      <!-- mobile version -->
+      <div class="md:hidden ml-32 space-y-4">
+        <img class="h-48" src="images/logo/145816849_padded_logo.png" alt="mainlogo">
+        <h1 class="text-center text-2xl">Portfolio</h1>
+      </div>
+     
+
+
+
+      <!-- second section -->
+      <div class="hidden md:flex font-alata space-x-16 ">
+        <div class="group  hover:text-red-600 font-bold ">
+          <a href="#">Home</a>
+          <!-- border -->
+          <div class="group-hover:border-b mx-2 group-hover:border-blue-200">
+          </div>
+        </div>
+        <div class="group font-bold hover:text-red-600">
+          <a href="#details">About</a>
+          <!-- border -->
+          <div class="group-hover:border-b mx-2 group-hover:border-blue-200">
+          </div>
+        </div>
+        <div class="group font-bold hover:text-red-600">
+          <a href="#footer">Contact</a>
+          <!-- border -->
+          <div class="group-hover:border-b mx-2 group-hover:border-blue-200">
+          </div>
+        </div>
+        <div class="group font-bold hover:text-red-600">
+          <a href="#project">Projects</a>
+          <!-- border -->
+          <div class="group-hover:border-b mx-2 group-hover:border-blue-200">
+          </div>
+        </div>
+      </div>
+      <!-- 3rd section -->
+      <div class="sm:hidden mr-24 md:block bg-blue-400 text-white rounded-full py-2 px-3
+      shadow transform hover:scale-110 delay-50 duration-200  active:bg-black"> 
+        <a href="Resume_Sourav Baruah_Format4.pdf"> 
+         Download CV</a>
+         
+      </div>
+
+      <!-- mobile section header -->
+      <div class="md:hidden">
+        <button
+          id="menu-btn"
+          type="button"
+          class="z-40 block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </div>
+    <!-- mobile menu -->
+       <!-- Mobile Menu -->
+       <div
+       id="menu"
+       class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full
+       min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
+     >
+       <a href="#" class="hover:text-pink-500">About</a>
+       <a href="#" class="hover:text-pink-500">Careers</a>
+       <a href="#" class="hover:text-pink-500">Events</a>
+       <a href="#" class="hover:text-pink-500">Products</a>
+       <a href="#" class="hover:text-pink-500">Support</a>
+   </div>
+  </nav>
+
+<!-- desktop version -->
+  <section id="details">
+    <div class="sm:hidden md:block container max-w-6xl mx-auto px-6 ">
+      <div class="relative shadow-lg">
+        <!-- my pic -->
+        <img class="" src="images/anotherpng.png" alt="">
+      </div>
+      <!-- text part -->
+      <div class="absolute top-64 right-72  max-w-md space-y-2 shadow-xl p-12">
+      <p class="text-sm">Hey There I'm</p>
+      <h1 class="font-bold text-xl">
+        Sourav Jyoti Baruah</h1>
+      <p>Aspiring <span class="font-bold">
+        web developer
+      </span></p>
+
+      <p class="truncate">
+        I'm a dedicated professional with a background in Information Technology. I pursued my passion 
+            for Front-End Development during my academic journey, starting with my schooling at Saraswati
+            Shiksha Niketan in 2013.My higher secondary education at Dakshin Kamrup College further fueled my interest. In 2020, I earned a Bachelor's degree in 
+            Information Technology from Gauhati University,</p>
+            
+        <div class="pt-4 space-x-2">
+          <a href="#footer">
+          <button class="bg-blue-400 text-white px-2 py-1 rounded-full">
+            Contact Me</button></a>
+            <a href="http://127.0.0.1:5501/about.html" target="_blank">
+            <button class="bg-black text-white px-2 py-1 rounded-full">
+              Learn More</button>
+            </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- mobile part -->
+    <div class="md:hidden sm:block relative">
+    <div class="sm:flex md:hidden items-center justify-center">
+      <img class="w-64" src="images/anotherpng.png" alt="">
+    </div>
+    <div class="transform hover:-translate-y-12 delay-75 duration-200 absolute bottom-0 right-12 p-4  h-48 w-68 shadow-xl bg-slate-50">
+      <p class="text-sm">Hey There I'm</p>
+      <h1 class="font-bold text-sm">
+        Sourav Jyoti Baruah</h1>
+      <p>Aspiring <span class="font-bold">
+        web developer
+      </span></p>
+      <p class="truncate">
+        I'm a dedicated professional with a b</p>
+        <div class="pt-4 space-x-2 text-sm">
+          <a href="#footer">
+          <button class="bg-blue-400 text-white px-2 py-1 rounded-full">
+            Contact Me</button></a>
+            <a href="http://127.0.0.1:5501/about.html" target="_blank">
+            <button class="bg-black text-white px-2 py-1 rounded-full">
+              Learn More</button>
+            </a>
+        </div>
+    </div>
+  </div>
+  
+
+
+
+
+  <section id="project">
+    <div class="container max-w-6xl mx-auto px-6">
+      <!-- grid -->
+        <div class = "grid grid-cols-1 md:grid-cols-2 p-4 gap-8">
+      <div class="group overflow-hidden relative">
+        <a href="testimonial-grid/index.html" target="_blank">
+        <img class=" w-full relative group-hover:scale-110 duration-200 " 
+      src="images/screenshots/testimonial.png" alt="">
+      <h5 class="uppercase bg-black text-md absolute bottom-0 left-0
+      text-center opacity-70 font-bold
+      right-0 md:top-52 top-0 sm:hover:opacity-0 text-white group-hover:scale-110 duration-200 ">
+        testimonial website
+      </h5>
+    </a>
+    </div>
+
+    <!-- grid 2 -->
+      <div class="group overflow-hidden relative">
+        <a href="Project/youtube.html" target="_blank">
+        <img class=" w-full relative group-hover:scale-110 duration-200 " 
+      src="images/screenshots/youtubeclone.png" alt="">
+      <h5 class="uppercase bg-black text-sm absolute bottom-0 left-0
+      text-center opacity-70 font-bold
+      right-0 md:top-52 top-0 sm:hover:opacity-0 text-white group-hover:scale-110 duration-200 ">
+         Youtube Clone
+      </h5>
+    </a>
+    </div>
+
+    <!-- grid 3 -->
+      <div class="group overflow-hidden relative" target="_blank">
+        <a href="clipboard/index.html" target="_blank">
+        <img class=" w-full relative group-hover:scale-110 duration-200 " 
+      src="images/screenshots/clipboard.png" alt="">
+      <h5 class="uppercase bg-black text-md absolute bottom-0 left-0
+      text-center opacity-70  font-bold
+      right-0 md:top-44 top-0 sm:hover:opacity-0 text-white group-hover:scale-110 duration-200 ">
+        clipboard website
+      </h5>
+    </a>
+    </div>
+
+      <!-- grid 4 -->
+      <div class="group overflow-hidden relative">
+        <a href="loopstudio/index.html" target="_blank">
+        <img class=" w-full relative group-hover:scale-110 duration-200 " 
+      src="images/screenshots/loopstudio.png" alt="">
+      <h5 class="uppercase bg-black text-md absolute bottom-0 left-0
+      text-center opacity-70  font-bold
+      right-0 md:top-44 top-0 sm:hover:opacity-0 text-white group-hover:scale-110 duration-200 ">
+        Loopstudio website
+      </h5>
+        </a>
+    </div>
+    <!-- grid 5 -->
+    <div class="group overflow-hidden relative">
+      <a href="shortly-website/index.html" target="_blank">
+      <img class=" w-full relative group-hover:scale-110 duration-200 " 
+    src="images/screenshots/shortly.png" alt="">
+    <h5 class="uppercase bg-black text-md absolute bottom-0 left-0
+    text-center opacity-70 font-bold
+    right-0 md:top-44 top-0 sm:hover:opacity-0 text-white group-hover:scale-110 duration-200 ">
+     Shortly website
+    </h5>
+  </a>
+  </div>
+
+  <!-- grid 6 -->
+  <div class="group overflow-hidden relative">
+    <a href="todoList/to-do-list.html" target="_blank">
+    <img class=" w-full relative group-hover:scale-110 duration-200 " 
+  src="images/screenshots/todoList.png" alt="">
+  <h5 class="uppercase bg-black text-md absolute bottom-0 left-0
+  text-center opacity-70 font-bold
+  right-0 md:top-44 top-0 sm:hover:opacity-0 text-white group-hover:scale-110 duration-200 ">
+    JavaScript todoList
+  </h5>
+  </a>
+</div>
+
+  </div>
+  </div>
+  </section>
+
+  <!-- footer section -->
+  <section id="footer">
+    <!-- Container -->
+    <div class="max-w-full py-10 mx-auto bg-black">
+      <!-- Footer Flex Container -->
+      <div
+        class="flex flex-col items-center mb-8 space-y-6 md:flex-row md:space-y-0 md:justify-between 
+        md:items-start">
+        <!-- Menu & Logo Container -->
+        <div
+          class="flex flex-col items-center space-y-24 md:items-start md:space-y-4">
+          <!-- Logo -->
+          <div class="h-8">
+            <img src="images/logo/145816849_padded_logo.png" alt="" class="w-24 md:ml-3">
+          </div>
+          <!-- Menu Container -->
+          <div class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0
+             md:space-x-6 md:ml-48 text-xl">
+            <div class="md:-space-y-0 text-center space-y-8 ">
+              <div class="flex flex-col md:flex-row md:space-x-24">
+                <a href="mailto:souravbaruah1996@gmail.com" target="_blank">
+                  <label class="cursor-pointer" for="mail">Mail Me</label>
+                </a>
+              <label class="font-mono" for="contact">Phn: (+91)6003378171</label>
+             </div>
+            </div>
+           
+            </div>
+          </div>
+     
+  
+        <!-- Social & Copy Container -->
+        <div
+          class="flex flex-col items-start justify-between space-y-4 text-gray-500">
+          <!-- icons Container -->
+          <div
+            class="flex items-center justify-center mx-auto space-x-4 md:justify-end md:mx-0"
+          >
+            <!-- Icon 1 -->
+            <div class="h-8 group">
+              <a href="#">
+                <img src="images/icon-facebook.svg" alt="" class="h-6 " >
+              </a>
+            </div>
+            <!-- Icon 2 -->
+            <div class="h-8 group">
+              <a href="#">
+                <img src="images/icon-twitter.svg" alt="" class="h-6 " />
+              </a>
+            </div>
+            <!-- Icon 3 -->
+            <div class="h-8 group">
+              <a href="#">
+                <img src="images/icon-pinterest.svg" alt="" class="h-6" />
+              </a>
+            </div>
+            <!-- Icon 4 -->
+            <div class="h-8 group">
+              <a href="#">
+                <img src="images/icon-instagram.svg" alt="" class="h-6" />
+              </a>
+            </div>
+          </div>
+  
+          <!-- Copy -->
+          <div class=" text-xl md:mr-24">
+            &copy; 2023 Portfolio. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+
+<script src="script.js"></script>
+
+</body>
+</html>
